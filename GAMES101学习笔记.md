@@ -4,20 +4,17 @@
 
 旋转操作默认是逆时针旋转，旋转-a角度的矩阵等号旋转a角度的转置，在定义上旋转-a和旋转a正好互相逆。所以旋转矩阵是``正交矩阵``
 
-
 ## View/Camera transformation
+
 什么是视图变换？简单而言确定相机的位置和摆放
 
 - 如何进行识图变换？
 
 - Define the camera first
-    
+
     >Position \hat e
-    
     >Look at / gaze direction \hat g
-
     >Up direction \hat t
-
 
 我们可以把相机固定不动放在原点（约定俗成的位置），朝-z方向看，向上方向是y
 
@@ -34,10 +31,9 @@
 
 透视投影是在一个点投射成四棱锥形成；正交显示若将相机放于无限远，远、近平面将无限接近。
 
-
 ### Orthographic projection
-一个简单的理解方式：相机固定在原点，朝-z方向看去，向上指向y，drop z坐标，然后平移缩放到[-1,1]的平面中
 
+一个简单的理解方式：相机固定在原点，朝-z方向看去，向上指向y，drop z坐标，然后平移缩放到[-1,1]的平面中
 
 ### Perspective projection
 
