@@ -69,7 +69,7 @@ A Simple Apporach:Sampling
 
 通过判断屏幕上所有的的像素的坐标中心是否在三角形内部，来决定像素的color。
 
-![alt](assets/sampling.png)
+![alt](https://github.com/EnochChan97/DailyPlan/blob/master/assets/sampling.png)
 
 如何判断一个点是否在三角形内部？
 
@@ -77,4 +77,4 @@ A Simple Apporach:Sampling
 
 单纯这样的光栅化会造成一个图形的走样：锯齿，为了解决这个问题会提出抗锯齿或反走样的方法。
 
-![](assets/Jaggies.png)
+![Jaggis](https://github.com/EnochChan97/DailyPlan/blob/master/assets/Jaggies.png)
