@@ -1,4 +1,10 @@
 
+# 2020/4/27
+
+* Lecture 6 Rasterization(反走样)
+* 调研数据集
+* 法语作业
+
 # 2020/4/25
 
 * GAMES101 Lecture5 Rasterization
