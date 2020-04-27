@@ -5,6 +5,11 @@
 * 调研数据集
 * 法语作业
 
+## To do
+
+* **看keras手册，分析octopus代码！！！**
+* 电商系统设计文档
+
 # 2020/4/25
 
 * GAMES101 Lecture5 Rasterization
