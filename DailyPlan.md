@@ -1,3 +1,16 @@
+# 2020/5/6
+
+> 这几天没有好好写日志。。该打**今天发现了一个巨好用的markdown editor** 写笔记的动力更足了呢！
+
+* 机器学习平时作业---GAN综述
+* 机器学习大作业---20%
+* animation方案之一，用blender来手动render一个video sequences
+
+## To do
+
+* 继续写ML大作业
+* 研究学习OpenGL是否可以做animation
+* 法语作业
 
 # 2020/4/27
 
