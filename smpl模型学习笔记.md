@@ -30,8 +30,17 @@
 
 ###### Model Formulation
 
-* mean template(T-pose)$\bar{\mathbf{T}} \in \mathbb{R}^{3N}$ int the zero pose,$\vec{\theta^*}$
-* Blend weights $W \in \mathbb{R}^{N\times K}$
+* Mean template(T-pose)$\bar{\mathbf{T}} \in \mathbb{R}^{3N}$ int the zero pose,$\vec{\theta^*}$. T-pose的顶点集合
+* Blend weights $W \in \mathbb{R}^{N\times K}$，最后standar blend skinning的权重矩阵
 
-* blend shape 
+* Blend shape function $B_S(\vec\beta):\mathbb{R}^{\left|\vec{\beta}\right|} \mapsto \mathbb{R}^{3N}$  刻画object shape特征
+* Regressor function $J(\vec\beta):\mathbb{R}^{\left|\vec\beta\right|} \mapsto \mathbb{R}^{3K}$ 是一个由shape参数$\beta$到joint locaion的变换矩阵，从不同的pose中学习而来。
+* Pose-dependent blend shape function$B_P(\vec\theta):\mathbb{R}^\vec\theta \mapsto \mathbb{R}^{3N}$ 用来实现“姿态-依赖”的变形
 
+上述函数生成的corrective blend shape加到rest pose上。最后一个standard blend skinning function$W(\cdot)$ 用于旋转在以各个关节为中心的顶点，并使用blend weights进行平滑。
+
+最后总体的模型：
+$$
+M(\vec\beta,\vec\theta;\Phi):\mathbb{R}^{\left|\vec\theta\right| \times \left|\vec\beta\right|} \mapsto \mathbb{R}^{3N}
+$$
+输入只有shape参数$\beta$和pose参数$\theta$，$\Phi$是上述介绍的学到的五个参数
