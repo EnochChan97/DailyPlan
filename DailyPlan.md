@@ -1,3 +1,14 @@
+# 2020/5/11
+
+* smpl论文，研究模型。
+
+### To Do
+
+- smpl模型的操作，如何通过beta、theta生成模型的pose和shape
+- 研究周代码，IK solver 给定pose生成对应的参数
+
+
+
 # 20205/9
 
 - 使用OpenGL+pygame成功加载带有纹理的obj模型，可以调整好相机和object的位置，但是目前还不能使物体旋转起来。。待解决
