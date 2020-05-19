@@ -25,3 +25,8 @@ print music_media
 ```
 
 extend()是将内容中的元素逐个添加到list中。
+
+
+
+* np.savetxt():将数组保存到txt文件
+* np.loadtxt():读取txt文件
