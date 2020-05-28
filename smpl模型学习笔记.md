@@ -44,3 +44,10 @@ $$
 M(\vec\beta,\vec\theta;\Phi):\mathbb{R}^{\left|\vec\theta\right| \times \left|\vec\beta\right|} \mapsto \mathbb{R}^{3N}
 $$
 输入只有shape参数$\beta$和pose参数$\theta$，$\Phi$是上述介绍的学到的五个参数
+
+
+
+
+
+**pose参数是子关节相对父关节的旋转角度，通过Rodriguez转换成3*3的旋转矩阵，去掉root关节，pose参数就变成了207（23*9）**
+
